@@ -10,7 +10,7 @@ A simple command line program to get current cryptocurrency data.
 
 To install automatically run:
 
-```
+```bash
 curl https://raw.githubusercontent.com/lukakerr/crypticker-cli/master/install.sh | sh
 ```
 
@@ -20,14 +20,14 @@ After this, you are able to run the crypticker-cli by executing `crypticker`.
 
 ### Usage
 
-```
-crypticker      // Get top 10 coins
-crypticker 20   // Pass an integer to get more coin data
+```bash
+crypticker      # Get top 10 coins
+crypticker 20   # Pass an integer to get more coin data
 ```
 
 ### Running
  
-```
+```bash
 git clone https://github.com/lukakerr/crypticker-cli.git
 cd crypticker-cli
 go run crypticker.go
@@ -35,7 +35,7 @@ go run crypticker.go
 
 ### Building
 
-```
+```bash
 go build crypticker.go
 ```
 
