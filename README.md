@@ -3,7 +3,7 @@
 A simple command line program to get current cryptocurrency data.
 
 <div style="text-align:center">
-  <img src="https://i.imgur.com/FYMT4Vm.png" alt="crypticker">
+  <img src="https://i.imgur.com/lU9w7Ba.png" alt="crypticker">
 </div>
 
 ### Running
