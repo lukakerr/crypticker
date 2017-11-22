@@ -1,1 +1,2 @@
-sudo cp ./crypticker /usr/local/bin
+curl https://raw.githubusercontent.com/lukakerr/crypticker-cli/master/crypticker > /usr/local/bin/crypticker
+chmod +x /usr/local/bin/crypticker
