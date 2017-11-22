@@ -1,0 +1,1 @@
+sudo cp ./crypticker /usr/local/bin
