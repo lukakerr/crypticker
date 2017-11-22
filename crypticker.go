@@ -115,7 +115,9 @@ func main() {
 	// Build table
 	table := tablewriter.NewWriter(os.Stdout)
 	table.SetHeader(names)
-	table.SetCenterSeparator("-")
+	table.SetCenterSeparator("─")
+	table.SetColumnSeparator("│")
+	table.SetRowSeparator("─")
 	table.SetAutoFormatHeaders(false)
 	table.SetAlignment(tablewriter.ALIGN_LEFT)
 
