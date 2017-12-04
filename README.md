@@ -21,8 +21,10 @@ After this, you are able to run the crypticker-cli by executing `crypticker`.
 ### Usage
 
 ```bash
-crypticker      # Get top 10 coins
-crypticker 20   # Pass an integer to get more coin data
+crypticker             # Get top 10 coins
+crypticker -l 20       # Pass an integer to get more coin data
+crypticker -c bitcoin  # Pass a coin name to get singular data
+crypticker -h          # Get help
 ```
 
 ### Running
@@ -41,5 +43,6 @@ go build crypticker.go
 
 ### To Do
 
-- Add support for multiple currencies
-- Add support for sorting by column
+- [x] Add support for individual coins
+- [ ] Add support for multiple currencies
+- [ ] Add support for sorting by column
