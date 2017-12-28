@@ -29,20 +29,19 @@ const YELLOW = "\x1b[33;1m"
 const RESET = "\x1b[0;0m"
 
 func main() {
-	flag.Parse()
-
 	var limit string
+	var coin string
 
-	if len(flag.Arg(0)) > 0 {
-		limit = flag.Arg(0)
-	} else {
-		limit = "10"
-	}
+	flag.StringVar(&limit, "l", "10", "Set the limit of coins to get")
+	flag.StringVar(&coin, "c", "", "Get data for an individual coin")
+
+	flag.Parse()
 
 	// Escape variables for URL
 	safeLimit := url.QueryEscape(limit)
+	safeCoin := url.QueryEscape(coin)
 
-	url := fmt.Sprintf("https://api.coinmarketcap.com/v1/ticker/?limit=%s", safeLimit)
+	url := fmt.Sprintf("https://api.coinmarketcap.com/v1/ticker/%s?limit=%s", safeCoin, safeLimit)
 
 	// Build the request
 	req, err := http.NewRequest("GET", url, nil)
