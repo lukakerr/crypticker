@@ -26,7 +26,7 @@ type Coins []Coin
 const RED = "\x1b[31;1m"
 const GREEN = "\x1b[32;1m"
 const YELLOW = "\x1b[33;1m"
-const RESET = "\x1b[0;1m"
+const RESET = "\x1b[0;0m"
 
 func main() {
 	flag.Parse()
