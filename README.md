@@ -32,6 +32,8 @@ crypticker -h          # Get help
 ```bash
 git clone https://github.com/lukakerr/crypticker-cli.git
 cd crypticker-cli
+# Install tablewriter dependency
+go get github.com/olekukonko/tablewriter
 go run crypticker.go
 ```
 
