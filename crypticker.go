@@ -23,14 +23,18 @@ type Coin struct {
 
 type Coins []Coin
 
-const RED = "\x1b[31;1m"
-const GREEN = "\x1b[32;1m"
-const YELLOW = "\x1b[33;1m"
-const RESET = "\x1b[0;0m"
+const (
+	RED    = "\x1b[31;1m"
+	GREEN  = "\x1b[32;1m"
+	YELLOW = "\x1b[33;1m"
+	RESET  = "\x1b[0;0m"
+)
 
 func main() {
-	var limit string
-	var coin string
+	var (
+		limit string
+		coin  string
+	)
 
 	flag.StringVar(&limit, "l", "10", "Set the limit of coins to get")
 	flag.StringVar(&coin, "c", "", "Get data for an individual coin")
