@@ -11,7 +11,7 @@ A simple command line program to get current cryptocurrency data.
 To install automatically run:
 
 ```bash
-$ curl https://raw.githubusercontent.com/lukakerr/crypticker-cli/master/install.sh | sh
+$ curl https://raw.githubusercontent.com/lukakerr/crypticker/master/install.sh | sh
 ```
 
 This will execute `install.sh` and place the `crypticker` binary in `/usr/local/bin`.
@@ -30,7 +30,7 @@ $ crypticker -h          # Get help
 ### Running
  
 ```bash
-$ git clone https://github.com/lukakerr/crypticker-cli.git
+$ git clone https://github.com/lukakerr/crypticker.git
 
 $ cd crypticker-cli
 
