@@ -28,7 +28,7 @@ $ crypticker -h          # Get help
 ```
 
 ### Running
- 
+
 ```bash
 $ git clone https://github.com/lukakerr/crypticker.git
 
@@ -37,13 +37,13 @@ $ cd crypticker-cli
 # Install tablewriter dependency
 $ go get github.com/olekukonko/tablewriter
 
-$ go run crypticker.go
+$ go run main.go
 ```
 
 ### Building
 
 ```bash
-$ go build crypticker.go
+$ go build main.go
 ```
 
 ### To Do
